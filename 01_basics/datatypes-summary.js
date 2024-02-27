@@ -38,3 +38,27 @@
 // int x = 10; // x is a variable of type int
 // String name = "John"; // name is a variable of type String
 // JavaScript's dynamic typing allows for more flexibility but can lead to potential runtime errors if not handled carefully. Static typing, on the other hand, provides better type safety at the cost of some initial verbosity and strictness.
+
+//***************************MEMORY*******************************
+
+// 2 types of memories --> Stack memory and Heap memory
+// All Primitive datatype go in Stack memory and here we get an copy of a variable if assigned.
+// Non primitive datatype go in Heap Memory and here we get the refrence of a variable if assigned
+
+
+let youtubeName = "AbhishekAnand"
+let anotherName = youtubeName
+
+anotherName = "Rahul"
+
+let userOne = {
+    email : 'abc@xyz.com',
+    upi : 'xyz@ybl'
+};
+
+let userTwo = userOne
+
+userTwo.email = 'abhishek@icici.com'
+
+console.log(userOne.email);
+console.log(userTwo.email);
